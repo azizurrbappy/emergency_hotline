@@ -12,7 +12,17 @@
   margin: 0 auto;
 }
 
+main {
+  background-color: #41ff6b1a;
+}
+
+/* Mobile Header */
+
 /* Header Section */
+#mb_header {
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -81,11 +91,182 @@ header {
   font-size: 2.5rem;
   font-weight: 900;
   color: white;
-  margin-bottom: 11px;
+  margin-bottom: 0.688rem;
 }
 
 .banner_sec p {
   font-size: 2.1.25rem;
   font-weight: 600;
   color: white;
+}
+
+/* Services Section */
+.services_sec {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  padding: 0;
+  padding-top: 2.938rem;
+  padding-bottom: 90px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 885px;
+}
+
+.service {
+  background-color: white;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  padding: 24px;
+  width: 230px;
+  border-radius: 12px;
+}
+
+.card_head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card_head img {
+  padding: 10px;
+  border-radius: 16px;
+  background: rgba(255, 227, 226, 1);
+}
+
+.card_head .fa-heart {
+  font-size: 24px;
+  color: rgba(92, 92, 92, 1);
+}
+
+.card_body {
+  color: black;
+}
+
+.card_body h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card_body p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(92, 92, 92, 1);
+  margin-bottom: 6px;
+}
+
+.card_body h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.card_body span {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(92, 92, 92, 1);
+  padding: 6px 10px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 9999px;
+}
+
+.card_btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_btn .copy_btn {
+  font-size: 16px;
+  color: rgba(92, 92, 92, 1);
+  width: 48.5%;
+  padding: 8px 0;
+  border: 1px solid rgba(212, 214, 213, 1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.card_btn .call_btn {
+  font-size: 16px;
+  color: white;
+  width: 48.5%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #00a63e;
+}
+
+/* Aside Section */
+.aside_sec {
+  width: 350px;
+  background-color: white;
+  max-width: 350px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.aside_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aside_head_title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+}
+
+.aside_head_title h4 {
+  font-weight: 500;
+}
+
+.aside_head button {
+  font-size: 16px;
+  color: white;
+  width: 114px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 999px;
+  background: #00a63e;
+}
+
+.aside_body {
+}
+
+.call_history {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: rgba(250, 250, 250, 1);
+  margin-top: 16px;
+}
+
+.call_info {
+  color: rgba(17, 17, 17, 1);
+}
+
+.call_info h5 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.call_info p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.call_time {
+  font-size: 18px;
+  font-weight: 400;
 }

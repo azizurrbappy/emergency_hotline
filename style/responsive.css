@@ -1,0 +1,89 @@
+@media only screen and (max-width: 640px) {
+  /* Width Set */
+  .mb-w-90 {
+    width: 90%;
+  }
+
+  /* Header Section */
+  header {
+    display: none;
+  }
+
+  #mb_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 16px 0;
+    width: 90%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    color: #006747;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .heart_coin {
+    display: flex;
+    gap: 12px;
+    background-color: #41ff6b1a;
+    padding: 6px 12px;
+    border-radius: 999px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .item img {
+    width: 14px;
+  }
+
+  .item span {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .btn {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 6px 12px;
+    background-color: #00a63e;
+  }
+
+  /* Service Section */
+  .services_sec {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .aside_sec {
+    max-width: 300px;
+    min-height: 500px;
+  }
+
+  .aside_head_title {
+    font-size: 18px;
+  }
+}

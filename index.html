@@ -20,6 +20,7 @@
 
   <!-- Style Sheet -->
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/responsive.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
       <h3 class="header_logo_text">Emergency <br> Service</h3>
     </div>
 
-
+    <!-- Desktop Header -->
     <div class="header_right">
       <div class="counter">
         <p>0</p>
@@ -42,8 +43,33 @@
       </div>
 
       <div class="counter_copy">
-        <p>2 Copy</p>
+        <p><span>0</span> Copy</p>
       </div>
+    </div>
+
+
+    </div>
+
+  </header>
+
+  <!-- Mobile Header -->
+  <header id="mb_header" class="container">
+    <div class="logo">
+      <img src="./assets/logo.png" alt="logo" />
+      <span>Emergency <br> Service</span>
+    </div>
+    <div class="actions">
+      <div class="heart_coin">
+        <div class="item">
+          <img src="./assets/heart.png" alt="">
+          <span>0</span>
+        </div>
+        <div class="item">
+          <img src="./assets/coin.png" alt="">
+          <span>100</span>
+        </div>
+      </div>
+      <button class="btn"><span>0</span> Copy</button>
     </div>
   </header>
 
@@ -51,12 +77,216 @@
 
     <!-- Banner Section -->
     <section class="banner_sec">
-      <div class="container">
+      <div class="container mb-w-90">
         <img width="92px" src="./assets/logo-dark.png" alt="Logo">
         <h1>জরুরি সেবা ডিরেক্টরি</h1>
         <p>Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of
           Bangladesh</p>
       </div>
+    </section>
+
+
+    <!-- Services And Call History Section -->
+    <section class="services_sec container mb-w-90">
+
+      <div class="services">
+        <div class="service">
+          <div class="card_head">
+            <img style="background: rgba(255, 93, 87, 0.511);" width="32px" src="./assets/emergency.png" alt="">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card_body">
+            <h3>জাতীয় জরুরি সেবা</h3>
+            <p>National Emergency</p>
+            <h2>999</h2>
+            <span>সার্বজনীন</span>
+          </div>
+
+          <div class="card_btn">
+            <button class="copy_btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="call_btn"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+        <div class="service">
+          <div class="card_head">
+            <img style="background: rgba(223, 239, 255, 1);" width="32px" src="./assets/police.png" alt="">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card_body">
+            <h3>পুলিশ</h3>
+            <p>Police</p>
+            <h2>999</h2>
+            <span>পুলিশ</span>
+          </div>
+
+          <div class="card_btn">
+            <button class="copy_btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="call_btn"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+        <div class="service">
+          <div class="card_head">
+            <img style="background: rgba(220, 40, 37, 0.504);" width="32px" src="./assets/fire-service.png" alt="">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card_body">
+            <h3>ফায়ার সার্ভিস</h3>
+            <p>Fire Service</p>
+            <h2>999</h2>
+            <span>ফায়ার</span>
+          </div>
+
+          <div class="card_btn">
+            <button class="copy_btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="call_btn"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="card_head">
+            <img style="background: rgba(236, 51, 82, 0.59);" width="32px" src="./assets/ambulance.png" alt="">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card_body">
+            <h3>অ্যাম্বুলেন্স</h3>
+            <p>Ambulance</p>
+            <h2>999</h2>
+            <span>স্বাস্থ্য</span>
+          </div>
+
+          <div class="card_btn">
+            <button class="copy_btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="call_btn"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="card_head">
+            <img width="32px" src="./assets/women&child.png" alt="">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card_body">
+            <h3>নারী ও শিশু সহায়তা</h3>
+            <p>Women & Child Helpline</p>
+            <h2>109</h2>
+            <span>সহায়তা</span>
+          </div>
+
+          <div class="card_btn">
+            <button class="copy_btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="call_btn"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="card_head">
+            <img style="background: rgba(223, 239, 255, 1);" width="32px" src="./assets/dudok.png" alt="">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card_body">
+            <h3>দুদক</h3>
+            <p>Anti-Corruption</p>
+            <h2>106</h2>
+            <span>সরকারি</span>
+          </div>
+
+          <div class="card_btn">
+            <button class="copy_btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="call_btn"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="card_head">
+            <img style="background: rgba(254, 241, 0, 0.581);" width="32px" src="./assets/Electricity_Outage.png"
+              alt="">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card_body">
+            <h3>বিদ্যুৎ বিভ্রাট</h3>
+            <p>Electricity Outage</p>
+            <h2>16216</h2>
+            <span>বিদ্যুৎ</span>
+          </div>
+
+          <div class="card_btn">
+            <button class="copy_btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="call_btn"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="card_head">
+            <img style="background: rgba(237, 0, 138, 0.379);" width="32px" src="./assets/brac.png" alt="">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card_body">
+            <h3>ব্র্যাক</h3>
+            <p>Brac</p>
+            <h2>16445</h2>
+            <span>এনজিও</span>
+          </div>
+
+          <div class="card_btn">
+            <button class="copy_btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="call_btn"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="card_head">
+            <img style="background: rgba(183, 120, 72, 0.552);" width="32px" src="./assets/Bangladesh-Railway.png"
+              alt="">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card_body">
+            <h3>বাংলাদেশ রেলওয়ে</h3>
+            <p>Bangladesh Railway</p>
+            <h2>163</h2>
+            <span>পরিবহন</span>
+          </div>
+
+          <div class="card_btn">
+            <button class="copy_btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="call_btn"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="aside_sec mb-w-90">
+        <div class="aside_head">
+          <div class="aside_head_title">
+            <i class="fa-regular fa-clock"></i>
+            <h4> Call History</h4>
+          </div>
+          <button>Clear</button>
+        </div>
+
+        <div class="aside_body">
+          <div class="call_history">
+            <div class="call_info">
+              <h5>জাতীয় জরুরি সেবা</h5>
+              <p>999</p>
+            </div>
+            <div class="call_time">
+              <p>11:36:58 AM</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
     </section>
 
 
