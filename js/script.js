@@ -32,3 +32,63 @@ for (let copyBtn of copyButtons) {
     });
   });
 }
+
+// Call and Call History Functionality
+const callButtons = document.querySelectorAll('.call_btn');
+let coins = parseInt(document.querySelector('.coin-counter').textContent);
+
+for (const callButton of callButtons) {
+  callButton.addEventListener('click', function () {
+    const card = this.closest('.service');
+    const serviceSubTitle = card.querySelector('p').textContent;
+    const serviceNumber = card.querySelector('h2').textContent;
+
+    if (coins >= 0 && coins < 20) {
+      return alert(
+        '❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০ কয়েন লাগবে।'
+      );
+    }
+
+    if (coins >= 20) {
+      alert(`📞 Calling ${serviceSubTitle} Service ${serviceNumber}...`);
+
+      coins -= 20;
+      document.querySelector('.coin-counter').textContent = coins;
+
+      // Call History ---------------------------------
+      const serviceName = card.querySelector('h3').textContent;
+
+      const currentTime = new Date().toLocaleTimeString([], {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true,
+      });
+
+      const callHistory = document.createElement('div');
+      callHistory.classList.add('call_history');
+
+      const callInfo = document.createElement('div');
+      callInfo.classList.add('call_info');
+      callInfo.innerHTML = `
+      <h5>${serviceName}</h5>
+      <p>${serviceNumber}</p>
+      `;
+
+      const callTime = document.createElement('div');
+      callTime.classList.add('call_time');
+      callTime.innerHTML = `<p>${currentTime}</p>`;
+
+      callHistory.appendChild(callInfo);
+      callHistory.appendChild(callTime);
+
+      document.querySelector('.aside_body').appendChild(callHistory);
+    }
+
+    document
+      .querySelector('.aside_head button')
+      .addEventListener('click', function () {
+        document.querySelector('.aside_body').innerHTML = '';
+      });
+  });
+}
