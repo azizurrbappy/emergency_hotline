@@ -84,11 +84,11 @@ for (const callButton of callButtons) {
 
       document.querySelector('.aside_body').appendChild(callHistory);
     }
-
-    document
-      .querySelector('.aside_head button')
-      .addEventListener('click', function () {
-        document.querySelector('.aside_body').innerHTML = '';
-      });
   });
 }
+
+document
+  .querySelector('.aside_head button')
+  .addEventListener('click', function () {
+    document.querySelector('.aside_body').innerHTML = '';
+  });
